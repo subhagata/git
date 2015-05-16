@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Git | Tutorial</title>
+</head>
+
+<body>
+	<p>
+    	<h1>
+        	This is a Git Tutorial
+        </h1>
+    </p>
+    
+    <h3>
+    	Design a Calculator
+    </h3>
+    
+    <form>
+    
+        <input type="text" id="no1" placeholder="Enter First No" />
+        <input type="text" id="no2" placeholder="Enter Second No" />
+        
+        <button onClick="ad()"> Add</button>
+   </form>
+</body>
+</html>
+
+<script>
+function ad()
+{
+	var a = document.getElementById('no1').value;
+	var b = document.getElementById('no2').value;
+	
+	
+	var res = parseFloat(a) + parseFloat(b);
+	if (parseFloat(a) > 10)
+	{
+		alert ('First number cannot be more than 10');
+	}
+	else
+	document.write(res);
+}
+</script>
